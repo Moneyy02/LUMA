@@ -23,12 +23,7 @@ Built with ❤️ by a team of 3 developers.
 ---
 
 > “Your mind matters. Luma listens.”
-=======
-# LUMA — Mental Wellness Platform
 
-A dark, premium React mental wellness app with an AI-powered chatbot backed by Claude.
-
----
 
 ## 🚀 Quick Start
 
