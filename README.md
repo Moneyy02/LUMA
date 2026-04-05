@@ -97,4 +97,4 @@ luma/
 | npm run dev:all   | Start frontend + backend together ✅ |
 | npm run dev       | Frontend only (chatbot won't work)   |
 | npm run build     | Build frontend for production        |
->>>>>>> e721b8f (first commit)
+
