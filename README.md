@@ -5,7 +5,7 @@ Luma is an AI-powered mental wellness platform designed to support emotional wel
 
 ## 📸 Demo
 
-![Luma Preview](./luma.png)
+![Luma Preview](./Luma.png)
 
 ## ✨ Features
 - 🤖 AI Chat Support – talk freely and get guided responses  
