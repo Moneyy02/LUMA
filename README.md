@@ -14,17 +14,6 @@ Luma is an AI-powered mental wellness platform designed to support emotional wel
 - Backend: Node.js , express.js , local storage  
 - AI: OpenAI API  
 
-## 🎯 Goal
-To create a calm, accessible space where users can reflect, heal, and grow.
-
-## 👥 Team
-Built with ❤️ by a team of 3 developers.
-
----
-
-> “Your mind matters. Luma listens.”
-
-
 ## 🚀 Quick Start
 
 ### 1. Install frontend dependencies
@@ -97,4 +86,14 @@ luma/
 | npm run dev:all   | Start frontend + backend together ✅ |
 | npm run dev       | Frontend only (chatbot won't work)   |
 | npm run build     | Build frontend for production        |
+
+## 🎯 Goal
+To create a calm, accessible space where users can reflect, heal, and grow.
+
+## 👥 Team
+Built with ❤️ by a team of 3 developers.
+
+---
+
+> “Your mind matters. Luma listens.”
 
