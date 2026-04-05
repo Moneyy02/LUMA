@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ## 🫧 Luma – AI Mental Wellness Platform
 
 Luma is an AI-powered mental wellness platform designed to support emotional well-being in a simple and safe way. It helps users understand their feelings, manage stress, and build healthier habits.
