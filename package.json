@@ -1,12 +1,24 @@
 {
   "name": "luma",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "description": "Luma is an AI-powered mental wellness platform designed to support emotional well-being in a simple and safe way. It helps users understand their feelings, manage stress, and build healthier habits.",
+  "homepage": "https://github.com/Moneyy02/LUMA#readme",
+  "bugs": {
+    "url": "https://github.com/Moneyy02/LUMA/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moneyy02/LUMA.git"
+  },
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "main": "eslint.config.js",
   "scripts": {
     "dev": "vite",
     "dev:server": "cd server && npm run dev",
-    "dev:all": "concurrently --names \"CLIENT,SERVER\" --prefix-colors \"cyan,magenta\" \"vite\" \"cd server && node --watch index.js\"",
+    "dev:all": "concurrently --names \"CLIENT,SERVER\" --prefix-colors \"cyan,magenta\" \"vite\" \"cd server && npm install && node index.js\"",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
