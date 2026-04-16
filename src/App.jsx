@@ -13,6 +13,8 @@ import Journal   from './components/Journal'
 import Chatbot   from './components/Chatbot'
 import Quotes    from './components/Quotes'
 import Meditation from './components/Meditation'
+import Login     from './components/Login'
+import Register  from './components/Register'
 import Footer    from './components/Footer'
 
 export default function App() {
@@ -30,11 +32,13 @@ export default function App() {
           <Footer setActivePage={setActivePage} />
         </>
       )}
-      {activePage === 'mood'      && <FeaturePage><MoodTracker /></FeaturePage>}
-      {activePage === 'journal'   && <FeaturePage><Journal /></FeaturePage>}
-      {activePage === 'chat'      && <FeaturePage><Chatbot /></FeaturePage>}
-      {activePage === 'quotes'    && <FeaturePage><Quotes /></FeaturePage>}
-      {activePage === 'meditation'&& <FeaturePage><Meditation /></FeaturePage>}
+      {activePage === 'mood'       && <FeaturePage><MoodTracker /></FeaturePage>}
+      {activePage === 'journal'    && <FeaturePage><Journal /></FeaturePage>}
+      {activePage === 'chat'       && <FeaturePage><Chatbot /></FeaturePage>}
+      {activePage === 'quotes'     && <FeaturePage><Quotes /></FeaturePage>}
+      {activePage === 'meditation' && <FeaturePage><Meditation /></FeaturePage>}
+      {activePage === 'login'      && <Login setActivePage={setActivePage} />}
+      {activePage === 'register'   && <Register setActivePage={setActivePage} />}
     </div>
   )
 }

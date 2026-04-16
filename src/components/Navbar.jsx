@@ -92,24 +92,52 @@ export default function Navbar({ activePage, setActivePage }) {
         ))}
       </div>
 
-      {/* CTA — Trispace */}
-      <button
-        onClick={() => setActivePage('chat')}
-        style={{
-          background: 'linear-gradient(135deg, var(--accent2), #4c1d95)',
-          border: 'none', borderRadius: 100,
-          padding: '9px 22px',
-          color: '#fff',
-          fontFamily: 'var(--font-heading)',          /* ← Trispace */
-          fontSize: '0.72rem', fontWeight: 600,
-          letterSpacing: '0.1em',
-          cursor: 'pointer',
-          boxShadow: '0 0 20px rgba(124,58,237,0.4)',
-          transition: 'all 0.25s ease',
-        }}
-        onMouseEnter={e => e.currentTarget.style.boxShadow = '0 0 40px rgba(124,58,237,0.7)'}
-        onMouseLeave={e => e.currentTarget.style.boxShadow = '0 0 20px rgba(124,58,237,0.4)'}
-      >Start Now</button>
+      {/* Auth buttons + CTA — Trispace */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+        <button
+          onClick={() => setActivePage('login')}
+          style={{
+            background: 'transparent',
+            border: '1px solid rgba(167,139,250,0.3)',
+            borderRadius: 100,
+            padding: '8px 16px',
+            color: 'var(--text-muted)',
+            fontFamily: 'var(--font-heading)',
+            fontSize: '0.72rem', fontWeight: 600,
+            letterSpacing: '0.06em',
+            cursor: 'pointer',
+            transition: 'all 0.25s ease',
+          }}
+          onMouseEnter={e => {
+            e.currentTarget.style.color = 'var(--accent)'
+            e.currentTarget.style.borderColor = 'rgba(167,139,250,0.5)'
+            e.currentTarget.style.background = 'rgba(167,139,250,0.05)'
+          }}
+          onMouseLeave={e => {
+            e.currentTarget.style.color = 'var(--text-muted)'
+            e.currentTarget.style.borderColor = 'rgba(167,139,250,0.3)'
+            e.currentTarget.style.background = 'transparent'
+          }}
+        >Sign In</button>
+
+        <button
+          onClick={() => setActivePage('register')}
+          style={{
+            background: 'linear-gradient(135deg, var(--accent2), #4c1d95)',
+            border: 'none', borderRadius: 100,
+            padding: '9px 22px',
+            color: '#fff',
+            fontFamily: 'var(--font-heading)',
+            fontSize: '0.72rem', fontWeight: 600,
+            letterSpacing: '0.1em',
+            cursor: 'pointer',
+            boxShadow: '0 0 20px rgba(124,58,237,0.4)',
+            transition: 'all 0.25s ease',
+          }}
+          onMouseEnter={e => e.currentTarget.style.boxShadow = '0 0 40px rgba(124,58,237,0.7)'}
+          onMouseLeave={e => e.currentTarget.style.boxShadow = '0 0 20px rgba(124,58,237,0.4)'}
+        >Start Now</button>
+      </div>
     </nav>
   )
 }
